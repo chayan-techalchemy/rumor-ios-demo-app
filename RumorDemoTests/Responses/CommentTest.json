@@ -1,0 +1,13 @@
+{
+    "id": "6617f1e23f1a6d187b05d907",
+    "message": "This is an excellent picture…",
+    "owner": {
+        "id": "60d0fe4f5311236168a109e7",
+        "title": "mr",
+        "firstName": "Joey",
+        "lastName": "Oliver",
+        "picture": "https://randomuser.me/api/portraits/med/men/61.jpg"
+    },
+    "post": "60d21b8667d0d8992e610d3f",
+    "publishDate": "2024-04-11T14:21:22.424Z"
+}

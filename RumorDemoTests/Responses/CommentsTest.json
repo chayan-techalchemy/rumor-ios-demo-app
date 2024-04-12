@@ -1,0 +1,72 @@
+{
+    "data": [
+        {
+            "id": "6617f1e23f1a6d187b05d907",
+            "message": "This is an excellent picture…",
+            "owner": {
+                "id": "60d0fe4f5311236168a109e7",
+                "title": "mr",
+                "firstName": "Joey",
+                "lastName": "Oliver",
+                "picture": "https://randomuser.me/api/portraits/med/men/61.jpg"
+            },
+            "post": "60d21b8667d0d8992e610d3f",
+            "publishDate": "2024-04-11T14:21:22.424Z"
+        },
+        {
+            "id": "60d2236f67d0d8992e6118d1",
+            "message": "Beautiful pic",
+            "owner": {
+                "id": "60d0fe4f5311236168a109f6",
+                "title": "miss",
+                "firstName": "Madison",
+                "lastName": "Ambrose",
+                "picture": "https://randomuser.me/api/portraits/med/women/15.jpg"
+            },
+            "post": "60d21b8667d0d8992e610d3f",
+            "publishDate": "2020-03-06T23:00:40.972Z"
+        },
+        {
+            "id": "60d2239167d0d8992e611930",
+            "message": "🤣🤣🤣 Wonderful shot",
+            "owner": {
+                "id": "60d0fe4f5311236168a109cd",
+                "title": "mr",
+                "firstName": "Roberto",
+                "lastName": "Vega",
+                "picture": "https://randomuser.me/api/portraits/med/men/25.jpg"
+            },
+            "post": "60d21b8667d0d8992e610d3f",
+            "publishDate": "2020-02-14T22:47:29.985Z"
+        },
+        {
+            "id": "60d2239c67d0d8992e611951",
+            "message": "Awesome shot",
+            "owner": {
+                "id": "60d0fe4f5311236168a109f5",
+                "title": "ms",
+                "firstName": "Charlotte",
+                "lastName": "Legrand",
+                "picture": "https://randomuser.me/api/portraits/med/women/77.jpg"
+            },
+            "post": "60d21b8667d0d8992e610d3f",
+            "publishDate": "2019-11-25T14:35:47.549Z"
+        },
+        {
+            "id": "60d2237f67d0d8992e6118fd",
+            "message": "Excellent pic",
+            "owner": {
+                "id": "60d0fe4f5311236168a109ed",
+                "title": "miss",
+                "firstName": "Kayla",
+                "lastName": "Bredesen",
+                "picture": "https://randomuser.me/api/portraits/med/women/13.jpg"
+            },
+            "post": "60d21b8667d0d8992e610d3f",
+            "publishDate": "2019-11-14T19:10:48.901Z"
+        }
+    ],
+    "total": 5,
+    "page": 0,
+    "limit": 20
+}

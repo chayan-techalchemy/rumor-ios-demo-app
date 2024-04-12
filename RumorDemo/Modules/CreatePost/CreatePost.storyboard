@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Post View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CreatePostViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="CreatePostViewController" customModule="RumorDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="e9l-mJ-XEt">
+                                <rect key="frame" x="0.0" y="59" width="393" height="393"/>
+                                <color key="backgroundColor" white="0.94875437062937062" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="e9l-mJ-XEt" secondAttribute="height" multiplier="1:1" id="VXw-9e-TCX"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a2w-Jg-fJn">
+                                <rect key="frame" x="10" y="472" width="373" height="266"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" name="button-tint"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NO1-Q4-1Lb">
+                                <rect key="frame" x="20" y="758" width="353" height="50"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6ly-U3-j2L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="create post"/>
+                                <connections>
+                                    <action selector="onClickCreateButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dHe-3v-IBt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="a2w-Jg-fJn" secondAttribute="trailing" constant="10" id="3bt-TA-Fr9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="e9l-mJ-XEt" secondAttribute="trailing" id="8GN-dP-DIC"/>
+                            <constraint firstItem="a2w-Jg-fJn" firstAttribute="top" secondItem="e9l-mJ-XEt" secondAttribute="bottom" constant="20" id="A98-t6-wIS"/>
+                            <constraint firstItem="e9l-mJ-XEt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="AMz-5W-mYG"/>
+                            <constraint firstItem="e9l-mJ-XEt" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="IQo-BB-kLh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="NO1-Q4-1Lb" secondAttribute="bottom" constant="10" id="KQ7-A5-Irc"/>
+                            <constraint firstItem="NO1-Q4-1Lb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="PFg-ch-NuT"/>
+                            <constraint firstItem="a2w-Jg-fJn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="e8R-Z4-lM3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NO1-Q4-1Lb" secondAttribute="trailing" constant="20" id="kJr-3N-W6c"/>
+                            <constraint firstItem="NO1-Q4-1Lb" firstAttribute="top" secondItem="a2w-Jg-fJn" secondAttribute="bottom" constant="20" id="w60-bh-9w3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="createButton" destination="NO1-Q4-1Lb" id="cfg-Oy-eE5"/>
+                        <outlet property="createButtonBottomConstraint" destination="KQ7-A5-Irc" id="GNQ-p9-TPn"/>
+                        <outlet property="descriptionTextField" destination="a2w-Jg-fJn" id="UyO-vb-q7h"/>
+                        <outlet property="postImageView" destination="e9l-mJ-XEt" id="Pi1-vI-1Y7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add-image-placeholder" width="42.666667938232422" height="42.666667938232422"/>
+        <namedColor name="button-tint">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

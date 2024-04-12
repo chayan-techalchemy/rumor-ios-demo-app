@@ -1,0 +1,20 @@
+{
+    "id": "60d21b8667d0d8992e610d3f",
+    "image": "https://img.dummyapi.io/photo-1515376721779-7db6951da88d.jpg",
+    "likes": 17,
+    "link": null,
+    "tags": [
+        "dog",
+        "pet",
+        "canine"
+    ],
+    "text": "@adventure.yuki frozen grass short-coated black dog sitting on snow",
+    "publishDate": "2020-05-24T05:44:55.297Z",
+    "owner": {
+        "id": "60d0fe4f5311236168a109ed",
+        "title": "miss",
+        "firstName": "Kayla",
+        "lastName": "Bredesen",
+        "picture": "https://randomuser.me/api/portraits/med/women/13.jpg"
+    }
+}
